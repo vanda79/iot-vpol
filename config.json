@@ -1,0 +1,29 @@
+{
+  "inbounds": [
+    {
+      "port": 80,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "REPLACE_WITH_UUID",
+            "level": 0,
+            "email": "iot@tunnel"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    }
+  ]
+}
